@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.option-holder {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.option-holder-2{
+   display: grid;
+   grid-template-columns: max-content max-content max-content;
+   column-gap: 10px;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.textbox {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+#new-pass {
+    height: 20px;
+    align-self: center;
+    width: 300px;
+}
+
+body {
+    padding: 50px;
+    margin: 0px;
+    background-color: gray;
+    border: 50px solid darkslategray;
+    align-items: center;
+}
+
+
+input[type=submit] {
+    background-color: white;
+    color: blue;
+    align-self:center;
+    width: 400px;
+    font-weight: 800;
+    font-size: 15px;
+}
+input[type=submit]:hover{
+    background-color: brown;
+    
+}
+
+.submit-wrapper {
+    text-align: center;
+}

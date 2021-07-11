@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <form action="">
+        <div class="option-holder">
+            <label for="password_length">Password Length: </label>
+            <select name="" id="password_length" required>
+                <optgroup label="Weak">
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </optgroup>
+
+                <optgroup label="Strong">
+                    <option selected="selected" value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">19</option>
+                    <option value="21">19</option>
+                </optgroup>
+            </select>
+        </div>
+        
+       <br>
+
+        <div class="option-holder-2">
+            <label for="symbols">Include Symbols: </label>
+            <input type="checkbox" name="symbols" id="symbols" checked><p>( e.g. @#$% )</p>
+        </div>
+        
+        <div class="option-holder-2">
+            <label for="numbers">Include numbers: </label>
+            <input type="checkbox" name="numbers" id="numbers" checked><p>( e.g. 123456 )</p>
+        </div>
+
+       
+        <div class="option-holder-2">
+            <label for="char-lowercase">Include Lowercase characters:</label>
+            <input type="checkbox" name="char-lowercase" id="char-lowercase" checked><p>( e.g. abcdefgh )</p>
+        </div>
+
+        
+        
+        <div class="option-holder-2">
+            <label for="char-uppercase">Include Uppercase characters:</label>
+            <input type="checkbox" name="char-uppercase" id="char-uppercase"><p>( e.g. ABCDEFGH )</p>
+        </div>
+
+        
+       
+        <div class="option-holder-2">
+            <label for="exclude-similar">Exclude Similar characters:</label>
+            <input type="checkbox" name="exclude-similar" id="exclude-similar" checked><p>( e.g. i, l, 1, L, o, 0, O )</p>
+        </div>
+
+       
+        <div class="option-holder-2">
+            <label for="exclude-amb">Exclude Ambiguous Characters</label>
+            <input type="checkbox" name="exclude-amb" id="exclude-amb"><p>( { } [ ] ( ) / \ ' " ` ~ , ; : . < > )</p>
+        </div>
+
+        <br>
+        <br>
+        <div class="submit-wrapper">
+            <input type="submit" value="Generate Password" id="submit">
+        </div>
+        
+    </form>
+    <br>
+    <br>
+    <div class="textbox">
+        <p>Your new password: </p>
+        <input type="text" name="new-pass" id="new-pass" title="Generate Password">
+    </div>
+</body>
+</html>
